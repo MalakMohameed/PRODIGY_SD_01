@@ -1,2 +1,2 @@
 # PRODIGY_SD_01
-Web Development Internship 1st project 
+Software Development Internship 1st project 
