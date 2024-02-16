@@ -6,6 +6,31 @@ public class TemperatureConverter {
        
     }
     
+    
+ public double converter(double temperature,String inputUnit, String outputUnit){
+     if(inputUnit == "°C" && outputUnit == "°F"){
+        return CtoF(temperature);
+     }
+     else if(inputUnit == "°C" && outputUnit == "°K"){
+         return CtoK(temperature);
+     }
+     else if(inputUnit == "°F" && outputUnit == "°C"){
+         return FtoC(temperature);
+     }
+     else if(inputUnit == "°F" && outputUnit == "°K"){
+         return FtoK(temperature);
+     }
+     else if(inputUnit == "°K" && outputUnit == "°C"){
+         return KtoC(temperature);
+     }
+     else if(inputUnit == "°K" && outputUnit == "°F"){
+         return KtoF(temperature);
+     }
+     else if(inputUnit == outputUnit){
+         return temperature;
+     }
+        return 0;
+ }   
 
 
 public double FtoC(double input){
